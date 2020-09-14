@@ -1,0 +1,13 @@
+コンテナビルド
+docker-compose build
+
+コンテナ起動
+docker-compose up -d
+
+コンテナログイン
+docker exec -it linuxserverwork_cent_os_ctr_1 /bin/bash
+
+php.iniの場所
+php -i | grep php.ini
+
+

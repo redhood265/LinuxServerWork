@@ -1,7 +1,10 @@
 version: '3'
-services:
-  cent_web_server:
-    container_name: web-container
-    build:
-      dockerfile: cent_docker 
 
+services:
+  cent_os_ctr:
+    build:
+      context: .
+      # 利用するDockerファイルを指定
+      dockerfile: dockerfile_cent_os
+    stdin_open: true
+    tty: true

@@ -1,0 +1,6 @@
+FROM centos:7
+
+RUN yum update
+RUN yum -y install httpd
+RUN yum -y install vim
+#RUN yum -y install httpd
